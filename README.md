@@ -50,4 +50,4 @@ Not uploaded due to grey zone laws about anti jammers
 ## Project Image
 ![Back of the custom PCB](hero.png)
 
-![Front of the pcb](hero2.png)
+![Front of the pcb](hero2.jpg)
