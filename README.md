@@ -1,90 +1,53 @@
-# Project Name
-
-> Replace this title with the name of your project.
+# GNSS Anti-Jammer & Signal Processing
 
 ## Project Owner
 
-**Name:** Your Name  
-**Virginia Tech Email:** yourpid@vt.edu
+**Name:** Alek  
+**Virginia Tech Email:** aleks@vt.edu
 
 ## Project Overview
 
-Provide a clear description of what you are building and the overall goal of the project.
-
-Include enough detail for someone unfamiliar with the project to understand what it does and why you are building it.
+Satellite navigation signal processing software developed in SystemVerilog and tested using simulated GPS signals with HackRF SDR. The system implements GPS signal acquisition, fast Fourier transforms, tracking loops, and continuous IQ sample generation to track GNSS signals and test bit detection.
 
 ## What I Hope to Learn
 
-Describe the technical skills, concepts, or experience you hope to gain from completing this project.
+- Advanced GNSS signal processing and tracking loop integration.
+- High-bandwidth system implementation and digital design.
+- Software-defined radio (SDR) interfacing and logic implementation.
 
 ## Design and Implementation
 
-Document the design of your project as it develops.
-
-This may include:
-
-- Block diagrams
-- Circuit schematics
-- PCB designs
-- CAD models
-- Software architecture
-- Hardware selection
-- Calculations
-- Testing methods
-
-Explain major design decisions and why you made them.
+- **Software Architecture:** MATLAB-based GNSS tracking code.
+- **Hardware Integration:** HackRF, Zynq FPGA, Custom PCB utilized for continuous IQ sample generation and RF front-end processing.
+- **Core Algorithms:** Implements GPS signal acquisition via fast Fourier transforms (FFTs), followed by tracking loops, bit detection, and pseudorange estimation.
 
 ## Bill of Materials
 
-Document the major components and materials used for the project.
+All already bought
 
-| Item | Quantity | Estimated Cost | Link |
-|---|---:|---:|---|
-| Component | 1 | $0.00 | Link |
-
-**Estimated Total Cost:** $0.00
+**Estimated Total Cost:** ~$0
 
 ## Timeline and Milestones
 
-Outline the major stages of the project and update them as work progresses.
-
 | Milestone | Target Date | Status |
 |---|---|---|
-| Project planning | Date | Not Started |
-| Initial design | Date | Not Started |
-| Prototype | Date | Not Started |
-| Testing | Date | Not Started |
-| Project completion | Date | Not Started |
+| Signal acquisition implementation | June 2026 | Completed |
+| Tracking loop integration | July 2026 | Completed |
+| Bit detection testing | August 2026 | In Progress |
+| Anti-jamming logic integration | TBD | Not Started |
 
 ## Progress Log
 
-Use this section to document meaningful progress throughout the project.
+### 2026-07-31
 
-### YYYY-MM-DD
-
-Describe what you worked on, what was completed, any problems you encountered, and what you plan to work on next.
+Completed basic signal acquisition and tracking software implementations. Successfully tested bit detection and integrated tracking loops.
 
 ## Project Files
-
-Organize and document important project files in this repository. Depending on the project, this may include:
-
-- Source code
-- KiCad files
-- Schematics
-- PCB layouts
-- CAD files
-- Datasheets
-- Test results
-- Documentation
-
+Not uploaded due to grey zone laws about anti jammers
 ## Useful Links
 
-Add any references, datasheets, documentation, tutorials, or other resources relevant to the project.
 
 ## Project Image
+![Back of the custom PCB](hero.png)
 
-Replace the `hero.png` file in the root of this repository with an image representing your project.
-
-**Keep the filename as `hero.png`.**
-
-This image is used as the project cover image on the AMP Lab website.
+![Front of the pcb](hero2.png)
